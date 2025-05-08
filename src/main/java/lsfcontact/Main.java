@@ -28,5 +28,6 @@ public class Main {
         LsfContactUtil.emailStudents(sl);
         LsfContactUtil.phoneStudents(sl);
         LsfContactUtil.writeStudents(sl);
+        LsfContactUtil.contactStudents(sl, s -> {return s.getAddress();}, LsfContactUtil::contact);
     }
 }
